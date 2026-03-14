@@ -1,2 +1,2 @@
-# MAE3270
+# MAE 3270
 Programming for the MAE3270 Class
