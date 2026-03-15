@@ -1,2 +1,2 @@
 # MAE 3270
-Programming for the MAE3270 Class
+Arduino Code for MAE3270
