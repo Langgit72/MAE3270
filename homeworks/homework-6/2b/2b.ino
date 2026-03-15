@@ -1,5 +1,7 @@
-///////////// Lec 15
-ISR(INT0_vect){
+// Objective Repeat part 2a using interrupts (your choice of external or pin change interrupt)
+// using external interrupt
+
+ISR(INT0_vect){ //write ISR
   if(PIND & 0b00000100){
     //light up the LED
     PORTD = 0b01000000; //setting bit 6 in port D to 1
@@ -18,6 +20,7 @@ int main(void)
   // configure the interrupt (set registers)
   EICRA = 0b00000001; //interrupt on any change
   EIMSK = 0b00000001; // enable INT0
+
   sei();
   while (1){
   }
